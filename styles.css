@@ -198,3 +198,10 @@ footer {
         padding: 3rem 5%;
     }
 }
+
+/* Flowchart sizing*/
+.flowchart {
+    width: 500px;
+    height: auto;
+}
+}
