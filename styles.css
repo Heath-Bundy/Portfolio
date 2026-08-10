@@ -225,9 +225,9 @@ footer {
     }
 }
 
-/* Flowchart Sizing */
+/* Image Sizing */
 
-.flowchart {
+.image size {
     width: 50%;
     height: auto;
     display: block;
