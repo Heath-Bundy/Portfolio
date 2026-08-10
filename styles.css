@@ -14,7 +14,7 @@
 }
 
 html {
-    font-size: 20px;
+    font-size: =clamp(16px, 1.5vs, 20px);
     scroll-behavior: smooth;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--primary);
@@ -100,7 +100,7 @@ h2 {
 }
 
 .hero h1 {
-    font-size: 3.5rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
     margin-bottom: 1rem;
 }
 
