@@ -253,6 +253,7 @@ footer {
 /* Image Sizing */
 .image-size {
     width: 25%;
+    justify-content: center;
     height: auto;
     display: block;
     margin-bottom: 8px;
