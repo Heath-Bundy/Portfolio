@@ -277,13 +277,6 @@ footer {
     display: inline-block;
 }
 
-.single-image-size {
-    width: 80%;
-    justify-content: center;
-    height: auto;
-    display: block;
-    margin-bottom: 8px;
-}
 
 .single-image {
     display: flex;
@@ -294,7 +287,7 @@ footer {
 
 .single-image img {
     max-width: 350px;
-    width: 100%;
+    width: 115%;
     height: auto;
     border-radius: 8px;
 }
