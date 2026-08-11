@@ -266,7 +266,9 @@ footer {
 }
 
 .single-image {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 1.5rem 0;
 }
 
@@ -281,6 +283,7 @@ footer {
     margin-top: 0.5rem;
     font-size: 0.85rem;
     color: var(--muted);
+    text-align: center;
 }
 
 /* for screenshots from my program, solves the scrolling issue*/
