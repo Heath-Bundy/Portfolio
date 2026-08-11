@@ -251,7 +251,6 @@ footer {
 }
 
 /* Image Sizing */
-
 .image-size {
     width: 25%;
     height: auto;
@@ -263,6 +262,43 @@ footer {
     width: 60px;
     height: auto;
     display: inline-block;
+}
+
+/* for screenshots from my program, solves the scrolling issue*/
+.screenshot-gallery {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.screenshot-item {
+    flex: 0 0 auto;
+    width: 220px;
+    text-align: center;
+    scroll-snap-align: start;
+}
+
+.screenshot-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.screenshot-item p {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+}
+
+/* Nicer scrollbar (optional, works in Chrome/Edge/Safari) */
+.screenshot-gallery::-webkit-scrollbar {
+    height: 8px;
+}
+
+.screenshot-gallery::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 4px;
 }
 
 @media (max-width: 768px) {
