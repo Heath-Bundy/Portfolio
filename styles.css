@@ -188,12 +188,12 @@ h2 {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
     text-align: left;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.12);
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(25, 133, 161, 0.4), 0 6px 10px rgba(25, 133, 166, 0.25);
 }
 
 .project-card h3 {
