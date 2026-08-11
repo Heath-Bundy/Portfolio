@@ -212,12 +212,16 @@ h2 {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
+    margin-right: 1.5rem;
 }
 
 .project-link:hover {
     color: var(--primary);
     text-decoration: underline;
 }
+
+/* Link Button Layout*/
+
 
 /* Footer Section */
 
