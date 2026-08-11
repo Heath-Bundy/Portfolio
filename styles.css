@@ -80,11 +80,14 @@ h2 {
     text-decoration: none;
     color: var(--muted);
     font-weight: 500;
-    transition: color 0.3s;
+    display: inline-block;
+    transition: transform 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
 }
 
 .nav-links a:hover {
     color: var(--accent);
+    transform: translateY(-3px);
+    text-shadow: 0 4px 12px rgba(25, 133, 161, 0.4);
 }
 
 /* Hero Section Banner */
@@ -211,8 +214,8 @@ h2 {
     color: var(--accent);
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s;
-    margin-right: 1.5rem;
+    display: inline-block;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
 }
 
 .project-link:last-child {
@@ -220,8 +223,8 @@ h2 {
 }
 
 .project-link:hover {
-    color: var(--primary);
-    text-decoration: underline;
+    transform: translateY(-3px);
+    text-shadow: 0 4px 12px rgba(25, 133, 161, 0.5);
 }
 
 /* Link Button Layout*/
