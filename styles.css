@@ -215,6 +215,10 @@ h2 {
     margin-right: 1.5rem;
 }
 
+.project-link:last-child {
+    margin-right: 0;
+}
+
 .project-link:hover {
     color: var(--primary);
     text-decoration: underline;
