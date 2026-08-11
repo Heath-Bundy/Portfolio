@@ -267,19 +267,17 @@ footer {
 /* for screenshots from my program, solves the scrolling issue*/
 .screenshot-gallery {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5rem;
-    overflow-x: auto;
-    padding: 1rem 0;
+    padding: 1.5rem;
     margin-top: 1.5rem;
     border-top: 1px solid var(--border);
-    scroll-snap-type: x mandatory;
 }
 
 .screenshot-item {
-    flex: 0 0 auto;
-    width: 220px;
+    flex: 0 1 220px;
     text-align: center;
-    scroll-snap-align: start;
 }
 
 .screenshot-item img {
@@ -291,16 +289,7 @@ footer {
 .screenshot-item p {
     margin-top: 0.5rem;
     font-size: 0.85rem;
-}
-
-/* Nicer scrollbar (optional, works in Chrome/Edge/Safari) */
-.screenshot-gallery::-webkit-scrollbar {
-    height: 8px;
-}
-
-.screenshot-gallery::-webkit-scrollbar-thumb {
-    background: var(--accent);
-    border-radius: 4px;
+    color: var(--muted);
 }
 
 @media (max-width: 768px) {
