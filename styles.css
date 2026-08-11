@@ -159,7 +159,7 @@ h2 {
     background-color: var(--secondary);
     color: var(--muted);
     border: 1px solid var(--accent);
-    padding: 0.5rem 1.5rem;
+    padding: 0.3rem .75rem;
     border-radius: 20px;
     font-weight: 500;
 }
