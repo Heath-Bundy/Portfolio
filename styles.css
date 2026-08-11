@@ -1,10 +1,11 @@
-```css
 /* Base Style Resets */
 :root {
-    --background: #f4f4f4a8;
-    --primary: #2E2E2E;
+    --background: #DCDCDD;
+    --primary: #46494C;
     --secondary: #FFFFFF; 
-    --accent: #4A90E2; 
+    --accent: #1985A1;
+    --muted: #4C5C68;
+    --border: #C5C3C6;
 }
 
 * {
@@ -19,10 +20,6 @@ html {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--primary);
     line-height: 1.6;
-}
-
-h1, h2, h3, .logo {
-    font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
 }
 
 body {
@@ -81,7 +78,7 @@ h2 {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--primary);
+    color: var(--muted);
     font-weight: 500;
     transition: color 0.3s;
 }
@@ -133,7 +130,7 @@ h2 {
 }
 
 .btn:hover {
-    background-color: var(--primary);
+    background-color: var(--muted);
 }
 
 /* Skills Badges */
@@ -148,7 +145,7 @@ h2 {
 
 .skill-badge {
     background-color: var(--secondary);
-    color: var(--primary);
+    color: var(--muted);
     border: 1px solid var(--accent);
     padding: 0.5rem 1.5rem;
     border-radius: 20px;
@@ -168,7 +165,7 @@ h2 {
 }
 
 .project-card {
-    background-color: var(--background);
+    background-color: var(--secondary);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
@@ -187,7 +184,7 @@ h2 {
 }
 
 .project-card p {
-    color: var(--primary);
+    color: var(--muted);
     margin-bottom: 1.5rem;
     font-size: 0.95rem;
 }
@@ -238,7 +235,7 @@ footer {
 /* Image Sizing */
 
 .image-size {
-    width: 60%;
+    width: 75%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -255,4 +252,3 @@ footer {
         width: 90%;
     }
 }
-```
