@@ -240,6 +240,12 @@ footer {
     margin: 0 auto;
 }
 
+.language-icon {
+    width: 40px;
+    height: auto;
+    display: inline-block;
+}
+
 @media (max-width: 768px) {
     .flowchart {
         width: 90%;
