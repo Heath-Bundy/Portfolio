@@ -265,6 +265,24 @@ footer {
     display: inline-block;
 }
 
+.single-image {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.single-image img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.single-image p {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--muted);
+}
+
 /* for screenshots from my program, solves the scrolling issue*/
 .screenshot-gallery {
     display: flex;
