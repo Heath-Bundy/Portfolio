@@ -265,6 +265,14 @@ footer {
     display: inline-block;
 }
 
+.single-image-size {
+    width: 40%;
+    justify-content: center;
+    height: auto;
+    display: block;
+    margin-bottom: 8px;
+}
+
 .single-image {
     display: flex;
     flex-direction: column;
