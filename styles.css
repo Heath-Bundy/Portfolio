@@ -105,6 +105,14 @@ h2 {
     margin-bottom: 1rem;
 }
 
+.gradient {
+    background: linear-gradient(90deg, #FFFFFF, #1985A1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold; 
+}
+
 .highlight {
     color: var(--accent);
     font-weight: bold;
