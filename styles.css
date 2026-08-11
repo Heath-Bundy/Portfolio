@@ -247,14 +247,14 @@ footer {
 /* Image Sizing */
 
 .image-size {
-    width: 60px;
+    width: 60%;
     height: auto;
     display: block;
     margin-bottom: 8px;
 }
 
 .language-icon {
-    width: 40%;
+    width: 60px;
     height: auto;
     display: inline-block;
 }
