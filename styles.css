@@ -154,6 +154,17 @@ h2 {
     gap: 1rem;
 }
 
+.skills-heading {
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--muted);
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
 .skill-badge {
     display: flex;
     flex-direction: column;
@@ -165,7 +176,7 @@ h2 {
     padding: 0.3rem .75rem;
     border-radius: 20px;
     font-weight: 500;
-    transition: transofrm 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-badge:hover {
