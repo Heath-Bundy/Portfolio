@@ -154,7 +154,18 @@
                     <img src="img/Database.png" alt= "Database Flow Chart" class="single-image-size">
                     <p>The above image is a a flow chart of the enhancements made for the primary/foreign and password hashing for my application</p>
                 </div>
-                
+
+                <p class="line-spacing">I selected this application because I built it myself and wanted to challenge myself to bring it closer to industry best practices. During the code review, I identified two real weaknesses: 
+                   the entries table lacked a proper foreign key relationship to users, and passwords were stored insecurely. I fixed the first by connecting entries to the users table's primary key (id), and addressed the second 
+                   by building a HashPassword service that combines SHA-256 hashing with salt before storing any password. This enhancement was the most straightforward of the three I completed. I had to refresh my knowledge of 
+                   password hashing, since it had been a while since I'd implemented secure credential storage, but that review was a useful challenge. The bigger difficulty was naming my unit tests. I found myself writing very 
+                   long, literal method names to fully describe each test's behavior, and I'm still unsure whether that's the right approach versus using shorter names paired with comments. After submitting this enhancement, my 
+                   instructor reviewed the changes and recommended two further improvements: replacing the destructive onUpgrade() method with a migration that preserves existing data, and replacing the single-pass SHA-256 hash 
+                   with a dedicated password-hashing algorithm such as bcrypt, scrypt, or Argon2. I incorporated both pieces of feedback. I switched HashPassword from manual SHA-256 hashing with a separately stored salt to bcrypt,
+                   which generates and embeds its own salt automatically. This actually simplified my implementation, since it removed the need for a separate salt column and manual salt-generation logic. I also rewrote onUpgrade()
+                   to use ALTER TABLE and UPDATE statements that preserve existing entries and users data during a schema change, rather than dropping and recreating both tables. This process reinforced that even a working, tested 
+                   enhancement can still have room for improvement once reviewed by someone else, and that incorporating feedback sometimes leads to a simpler solution than the original approach, not just a more complex one.
+                </p>
                 <a href="https://github.com/Heath-Bundy/Portfolio/tree/main/databases-original" class="project-link">Original Work</a>
                 <a href="https://github.com/Heath-Bundy/Portfolio/tree/main/databases-updated" class="project-link">Enhanced Work</a>
             </div>
