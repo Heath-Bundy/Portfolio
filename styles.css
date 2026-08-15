@@ -329,7 +329,7 @@ footer {
 
 /* line spacing */
 .line-spacing {
-    line-height: 5;
+    line-height: 1.75;
 }
 
 @media (max-width: 768px) {
