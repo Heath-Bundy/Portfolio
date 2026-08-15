@@ -113,7 +113,7 @@
                     <img src="img/Engineering.png" alt= "Layers Flow Chart">
                     <p>The above image is a highlevel over view of the new architecture for my application</p>
                 </div>
-                <p>I chose this artifact because it fulfilled all the CS 499 course outcomes and showcased my ability to apply what I've learned at SNHU to a real application that I created. For the software engineering 
+                <p class="line-spacing">I chose this artifact because it fulfilled all the CS 499 course outcomes and showcased my ability to apply what I've learned at SNHU to a real application that I created. For the software engineering 
                    portion of the capstone, I refactored the application by adding service and repository layerscreating UserService and WeightEntryService to house validation logic, and UserRepository and WeightEntryRepository 
                    to keep the service layer decoupled from the database. The process pushed me to view my own code as an outsider would, which was a valuable real-world exercise in critiquing and improving existing work. It 
                    revealed how much I still have to learn, but also showed me firsthand how separating concerns reduces redundancy, improves readability, and strengthens the overall codebase. I used the feedback from Milestone 
@@ -132,7 +132,7 @@
                     <img src="img/Algorithm.png" alt= "Algorithm Flow Chart" class="single-image-size">
                     <p>The above image is a a flow chart of the new Algorithm for my application</p>
                 </div>
-                <p>Currently, the application sorts date data (stored as strings in MM/DD/YYYY format) by entry order rather than by actual calendar date, a gap I addressed in this enhancement. Re-sorting by calendar date uses an 
+                <p class="line-spacing">Currently, the application sorts date data (stored as strings in MM/DD/YYYY format) by entry order rather than by actual calendar date, a gap I addressed in this enhancement. Re-sorting by calendar date uses an 
                    O(n log n) sorting algorithm, which is an efficient standard for ordering a dataset of this size without unnecessary overhead. I added a class to compute linear regression over the sorted data, giving users a 
                    projected date for reaching their goal weight; this calculation runs in O(n) time, since it only requires a single pass through the data to compute the necessary sums (x, y, xy, and x²) before solving for the 
                    slope and intercept. I chose an O(n log n) sort paired with an O(n) regression because together they keep the overall enhancement efficient—the sort is the more expensive step, but it's necessary to guarantee 
